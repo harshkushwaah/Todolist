@@ -10,7 +10,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 //Set up default mongoose connection
-const mongoDB = 'mongodb://127.0.0.1/todolist';
+const mongoDB = 'mongodb+srv://admin-harsh:test123@cluster0.ob5es.mongodb.net/todolist';
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
   console.log("success");
